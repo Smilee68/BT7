@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image:url(img/BGR.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --bgr-color:#00483d;
+    --panel-color:
+}
+.header{
+    background-color: var(--bgr-color);
+    color: white;
+    font-size: small;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    padding-left: 25%;
+}
+.header li {
+    margin-left:20px;
+}
+li a{
+    text-decoration: none;
+}
+li a:visited{
+    color: white;
+}
+#h1{
+    display:flex;
+    list-style-type: none;
+    padding-left: 30%;
+}
+.menu{
+    background-image: url('img/bgr3.jpg');
+}
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#pic1{
+    width: 8%;
+    height: 6%;
+}
+input[type="search"]{
+    width:35%;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+#searchicon1{
+    position: absolute;
+    top: 58px;
+    margin-left: 38.5%;
+    font-size: x-large;
+}
+#searchicon2{
+    position: absolute;
+    top: 63px;
+    margin-left: 39%;
+}
+#Search{
+    width: 100%;
+}
+p{
+    margin-left: 10px;
+    font-size: x-large;
+}
+p a{
+    text-decoration: none;
+    background-color: var(--bgr-color);
+    padding: 15px;
+    border-radius: 7px;
+}
+p a:visited{
+    color: white;
+}
+#part2{
+    background-color: var(--bgr-color);
+}
+#h2{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#h2 li{
+    margin-left: 60px;
+}
+#banner{
+    text-align: center;
+}
+#panels ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#listpanel li{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+#active{
+    background: transparent linear-gradient(180deg,#0d9984 0%,#00483d 100%);
+    box-shadow: 0 8px 8px -4px lightgreen;
+    color: white;
+}
+#non1, #non2{
+    box-shadow: 2px -2px 3px 1px lightslategray; 
+}
+#image{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#sp{
+    margin-top: 10px;
+    margin-left: 10%;
+    background: transparent linear-gradient(180deg,#0d9984 0%,#00483d 100%);
+    padding: 5px;
+    width:15%;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+.listproduct1{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    height: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#info1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#p1,#p2,#p3,#p4 {
+    width: 20%;
+    height: 75%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    text-align: center;
+    
+    /*background: rgba(255, 255, 255, 0.79);*/
+    background: transparent linear-gradient(180deg,#CCEDE4 0%,#FFE7F7 100%);;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+}
+#p1:hover, #p2:hover, #p3:hover, #p4:hover{
+    background: #dff082;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+#sale1,#sale2,#sale3,#sale4{
+    width:30%;
+    position: absolute;
+    top: -40px;
+    left: 80%;
+}
+.sidepanel{
+    list-style-type: none;
+    position: fixed;
+    top: 200px;
+    left: 2px;
+    border-radius: 16px;
+    padding: 5px;
+    background:transparent linear-gradient(180deg,#a7dbcd 0%,#eba7cc 100%);
+}
+.sidepanel li{
+    margin-top: 10px;
+}
+#infogreen{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#infogreen li{
+    background: #00483d;
+    color: white;
+    border-radius: 12px;
+    margin-left: 10px;
+    padding: 5px;
+}
+#infogreen li:hover{
+    background: rgb(223, 95, 21);
+    cursor: pointer;
+}
+#menudienthoai {
+    top: 28%;
+    left: 9%;
+    display:none;
+    cursor: pointer;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+#menudienthoai a{
+    display:block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;    
+}
+#h2a:hover{
+    background: #0d9984;
+}
+#menudienthoai a:hover{
+    background: #ddd;
+}
+#h2:hover #menudienthoai{
+    display: block;
+}
+.flex-container{
+    display: flex;
+    align-content: space-around;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.flex-container > .flex-item{
+    background-color: blueviolet;
+    width: 16%;
+    height: 80px;
+    line-height: 30px;
+    border: 1px solid #00483d;
+    border-radius: 16px;
+    background-color: white;
+    color:#00483d;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size:30px;
+    box-shadow: 2px -2px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.flex-item:hover{
+    background: rgb(155, 241, 16);
+}
+.flex-item p{
+    font-size: 18px;
+}
+#icon{
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.signup{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+#mailbar{
+    background: rgb(235, 137, 170);
+    height: 40px;
+    width: 300px;
+    border-radius: 15px;
+}
+#mailbox{
+    display:flex;
+    margin-left:10px;
+}
+#mailbox p{
+    position: absolute;
+    border-radius: 15px;
+    background: #035e50;
+    width: 80px;
+    height: 42px;
+    left: 85%;
+    color: #035e50;
+}
+.footer {
+    display: flex;
+    background: #00483d;
+    cursor: pointer;
+    justify-content: center;
+}
+.footer ul{
+    list-style-type: none;
+    color: white;
+}
+.footer ul li{
+    padding: 15px;
+}
+.endline{
+    background: #00483d;
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px;
+    color: white;
+    cursor: pointer;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.endline p{
+    font-size: 12px;
+}
+#paperplane{
+    position: absolute;
+    font-size: 32px;
+    left: 86%;
+}
